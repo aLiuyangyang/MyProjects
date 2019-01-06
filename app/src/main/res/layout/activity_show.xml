@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShowActivity">
+   <FrameLayout
+       android:id="@+id/show_view_pager"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/show_radio_group"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:background="@drawable/mypicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/show_image_home"
+            android:background="@drawable/home"
+            android:layout_width="@dimen/dp_25"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_height="@dimen/dp_25" />
+        <RadioButton
+            android:id="@+id/show_image_circle"
+            android:background="@drawable/circle"
+            android:layout_width="@dimen/dp_25"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_37"
+            android:layout_height="@dimen/dp_25" />
+        <RadioButton
+            android:id="@+id/show_image_shopping"
+            android:background="@mipmap/tab_home_bottom_gouwuche"
+            android:layout_width="@dimen/dp_60"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:layout_height="60dp" />
+        <RadioButton
+            android:id="@+id/show_image_order"
+            android:background="@drawable/order"
+            android:layout_width="@dimen/dp_25"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_43"
+            android:layout_height="@dimen/dp_25" />
+        <RadioButton
+            android:id="@+id/show_image_mine"
+            android:background="@drawable/mine"
+            android:layout_width="@dimen/dp_25"
+            android:button="@null"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_height="@dimen/dp_25" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_151"
+    xmlns:frseco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_5"
+    android:background="@drawable/item_ircle"
+    android:padding="@dimen/dp_8"
+    android:elevation="@dimen/dp_4"
+    android:layout_height="@dimen/dp_174">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_gravity="center"
+        frseco:roundedCornerRadius="@dimen/dp_15"
+        android:background="@drawable/item_hot"
+        android:id="@+id/item_search_image"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="@dimen/dp_102" />
+    <TextView
+        android:id="@+id/item_search_name"
+        android:textColor="#666666"
+        android:ellipsize="end"
+        android:layout_below="@id/item_search_image"
+        android:layout_marginTop="@dimen/dp_10"
+        android:maxLines="1"
+        android:text="23"
+        android:textSize="@dimen/sp_12"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ff0000"
+        android:text="23"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@id/item_search_name"
+        android:textSize="@dimen/sp_14"
+        android:id="@+id/item_search_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_search_sale"
+        android:textColor="#666666"
+        android:ellipsize="end"
+        android:layout_below="@id/item_search_name"
+        android:layout_marginLeft="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_10"
+        android:maxLines="1"
+        android:text="231232454545131313"
+        android:textSize="@dimen/sp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_24"
+    android:layout_marginTop="@dimen/dp_26"
+    tools:context=".activity.DetalisActivity">
+    <com.example.dell.myprojects.adapter.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/all_image"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/dp_312"
+                android:layout_height="@dimen/dp_274" />
+            <TextView
+                android:id="@+id/all_price"
+                android:text="2232"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_14"
+                android:textColor="#ff0000"
+                android:layout_below="@id/all_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/all_sale"
+                android:text="2232"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@id/all_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/all_name"
+                android:text="123"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_below="@id/all_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/all_weighnt"
+                android:text="2232"
+                android:layout_marginTop="@dimen/dp_14"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_12"
+                android:layout_below="@id/all_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </com.example.dell.myprojects.adapter.MyScrollView>
+</RelativeLayout>

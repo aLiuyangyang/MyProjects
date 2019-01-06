@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_24"
+    android:layout_marginTop="@dimen/dp_26"
+    tools:context=".activity.DetalisActivity">
+    <Button
+        android:id="@+id/detalis_but"
+        android:background="@drawable/fh"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30" />
+    <com.example.dell.myprojects.adapter.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.stx.xhb.xbanner.XBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/detalis_image"
+                android:layout_width="@dimen/dp_312"
+                android:layout_height="@dimen/dp_274"
+                android:clipChildren="false"
+                app:AutoPlayTime="3000"
+                app:clipChildrenLeftRightMargin="@dimen/dp_10"
+                app:isShowIndicatorOnlyOne="false"
+                app:isShowNumberIndicator="true"
+                app:pageChangeDuration="800"></com.stx.xhb.xbanner.XBanner>
+
+    <TextView
+        android:id="@+id/detalis_price"
+        android:text="2232"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_14"
+        android:textColor="#ff0000"
+        android:layout_below="@id/detalis_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/detalis_sale"
+        android:text="2232"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_12"
+        android:layout_below="@id/detalis_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/detalis_name"
+        android:text="123"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_below="@id/detalis_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/detalis_weighnt"
+        android:text="2232"
+        android:layout_marginTop="@dimen/dp_14"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_12"
+        android:layout_below="@id/detalis_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@id/detalis_weighnt"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="商品详情"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <WebView
+                android:id="@+id/detalis_web"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+        </LinearLayout>
+
+        </RelativeLayout>
+    </com.example.dell.myprojects.adapter.MyScrollView>
+</RelativeLayout>
